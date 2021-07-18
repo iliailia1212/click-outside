@@ -54,7 +54,7 @@ exports = module.exports = {
       callback: binding.value
     }
     const clickHandler = 'ontouchstart' in document.documentElement ? 'touchstart' : 'mousedown';
-    !isServer(vNode) && document.addEventListener(clickHandler, handler, , !!binding.modifiers.capture)
+    !isServer(vNode) && document.addEventListener(clickHandler, handler, !!binding.modifiers.capture)
   },
 
   update: function (el, binding) {
